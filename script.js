@@ -50,3 +50,12 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer_btns");
 const nextButton = document.getElementById("next_btn");
 
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+}
